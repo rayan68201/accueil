@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    
+}
+
+#fond{
+    height : 100vh;
+    width : 100vw;
+    position : fixed;
+    top:0px;
+    left : 0px;
+    z-index: -10;
+}
+
+#rt{
+    right:50px;
+}
+
+.logo a{
+    color: white;
+    padding: 0px 20px;
+    border:1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration:none;
+    font-weight:900;
+    text-shadow: rgba(0,0,0,0,7);
+    font-size: 2rem;
+    
+}
+
+.logo span{
+    color: rgb(238,56,11);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+ul{
+    list-style: none;
+    float:right;
+    display: flex;
+    margin-top: 20px;
+}
+
+ul li a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border:1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+    
+}
+
+ul li a:hover{
+    background: white;
+    color: #000;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+ul li.active a{
+    border-radius: 10px;
+    background: white;
+    color: black;
+}
+
+.principale{
+    max-width:114rem;
+    margin: 0 auto;
+}
+
+.titre{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.titre h1{
+    color:white;
+    font-size: 70px;
+}
+
+.titre h2{
+    color:white;
+    font-size: 60px;
+}
+
+.bouton {
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border-radius: 100px;
+    width: 100px;
+}
+
+.presentation{
+    color: white;
+    position: absolute;
+    top: 30%;
+}
+
+section1 {
+    position: absolute;
+    top: 15% ;
+    display: table;
+    box-sizing: content-box;
+    width: 95%;
+    vertical-align: text-top;
+    display:inline-grid;
+    left: 65px;
+    
+}
+
+section1 > article {
+    color: white;
+    width : 90%;
+    box-sizing:border-box;
+    padding: 1%;
+    font-size: 20px;
+}
+
+section1 > article > p{
+    font-size: 200px
+    font-family: 'Open Sans';
+}
+
+section1 > article > p:hover{
+    font-size: 25px;
+    transition: 1s;
+    font-family: 'Open Sans';
+}
+
+section1 > article1{
+  position: absolute;
+  top:-70px;
+  right: 200px;
+}
+
+ 
+section3 {
+    position: absolute;
+    top: 15% ;
+    display: table;
+    box-sizing: content-box;
+    width: 95%;
+    vertical-align: text-top;
+    display:inline-grid;
+    left: 40px;
+    
+}
+
+section3 > article {
+    display: inline-block;
+    color: white;
+    width : 100%;
+    box-sizing:border-box;
+    padding: 1%;
+    font-size: 20px;
+}
+
+section3 > article1 {
+    color: white;
+    width : 50%;
+    box-sizing:border-box;
+    padding: 1%;
+    font-size: 20px;
+}
+
+section3 > article > p{
+    font-size: 200px
+    font-family: 'Open Sans';
+}
+
+section3 > article2{
+  position: absolute;
+  top: 260px;
+  right: 25px;
+}
+
+section3 button{
+    position: relative;
+    height: 30px;
+    width: 150px;
+    border-radius: 50px;
+    border:3px solid ;
+    background: transparent;
+    font-size: 20px;
+    color:chocolate;
+    z-index: 2;
+    overflow: hidden; 
+}
+
+section3 button:hover {
+    color: chocolate;
+}
+
+section3 button::before{
+    content: "";
+    position: absolute; 
+     border-radius: 50px;
+    height: 30px;
+    width: 150px;
+    background-color:black;
+    top: -2px;
+    left:-3px;
+    transform: translate(-100%);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+section3 button:hover::before{
+    transform: translate(0%);
+}
+
+section3 button i{
+   display: none;
+}
+
+#mma{
+    width: 600px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.titre button{
+    left: 200px;
+    position: relative;
+    height: 70px;
+    width: 250px;
+    border-radius: 50px;
+    border:6px solid ;
+    background: transparent;
+    font-size: 25px;
+    color:chocolate;
+    z-index: 2;
+    overflow: hidden; 
+}
+
+.titre button:hover {
+    color: chocolate;
+}
+
+.titre button::before{
+    content: "";
+    position: absolute; 
+     border-radius: 50px;
+    height: 70px;
+    width: 2500px;
+    background-color:black;
+    top: -2px;
+    left:-3px;
+    transform: translate(-100%);
+    transition: 0.8s;
+    z-index: -1;
+}
+
+.titre button:hover::before{
+    transform: translate(0%);
+}
+
+.titre button i{
+   display: none;
+}
+
+
+
+
+
+
